@@ -1,0 +1,145 @@
+@import 'normalize';
+@font-face {
+  font-family: 'HighTide';
+  src: url('/css/fonts/HighTide.ttf');
+}
+@font-face {
+  font-family: 'OpenSans-CondencedLight';
+  src: url('/css/fonts/OpenSans-CondLight.ttf');
+}
+@font-face {
+  font-family: 'OdinRounded-Regular';
+  src: url('/css/fonts/Odin Rounded - Regular.ttf');
+}
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+  .header {
+    position: absolute;
+    height: 87px;
+    width: 100%;  
+    background-color: rgba(255, 255, 255, 0.1);
+    z-index: 1;
+    display: flex;
+    .logo {
+      opacity: 1;
+      color: white;
+      font: {
+        family: 'OdinRounded-Regular';
+        size: 41.7px;
+      }
+      margin: 31.5px 0 0 42.5px;
+      line-height: 31.3px;
+    }
+    .search {
+      margin-left: auto;
+      margin-right: 42px;
+      margin-top: 30.5px;
+      width: 30.5px;
+      height: 31.5px;
+      background: {
+        image: url('../images/search.png');
+        repeat: no-repeat;
+      }
+    }
+  }
+  .content {
+    display: flex;
+    height: 900px;
+    .hisper {
+      .bg-image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to top, rgba(65, 177, 176, 0.7), rgba(25, 64, 174, 0.7));
+      }
+      &-header {
+        position: relative;
+        z-index: 1;
+        margin-top: 324.5px;
+        margin-left: -30px;
+        margin-bottom: 0;
+        text-transform: uppercase;
+        line-height: 0.45;
+        font: {
+          family: 'HighTide';
+          size: 74.7px;
+          stretch: normal; 
+          weight: 300;
+        }
+      }
+      &-secondary {
+        position: relative;
+        z-index: 1;
+        margin-top: 23px;
+        margin-left: -30px;
+        font: {
+          family: 'OpenSans-CondencedLight';
+          size: 50px;
+          stretch: condenced; 
+          weight: 300;
+        }
+      }
+      color: white;
+      text-align: center;      
+      position: relative;
+      height: 100%;
+      width: 50%;
+      background: {
+        image:  url('../images/calque-5.jpg');
+        size: cover;
+        repeat: no-repeat;
+      }
+    }
+    .hippie {
+      .bg-image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to top, rgba(225, 146, 255, 0.7), rgba(126, 49, 192, 0.7));
+      }
+      &-header {
+        position: relative;
+        z-index: 1;
+        margin-top: 324.5px;
+        margin-left: -30px;
+        margin-bottom: 0;
+        text-transform: uppercase;
+        line-height: 0.45;
+        font: {
+          family: 'HighTide';
+          size: 74.7px;
+          stretch: normal; 
+          weight: 300;
+        }
+      }
+      &-secondary {
+        position: relative;
+        z-index: 1;
+        margin-top: 23px;
+        margin-left: -30px;
+        font: {
+          family: 'OpenSans-CondencedLight';
+          size: 50px;
+          stretch: condenced; 
+          weight: 300;
+        }
+      }
+      color: white;
+      text-align: center;      
+      position: relative;
+      height: 100%;
+      width: 50%;
+      background: {
+        image:  url('../images/calque-5.jpg');
+        size: cover;
+        repeat: no-repeat;
+      }
+    }
+  }
+}
