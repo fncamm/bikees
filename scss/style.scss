@@ -1,4 +1,10 @@
 @import 'normalize';
+
+$btn_bg: rgba(255, 255, 255, 0.12);
+$footer_border: #4d5362;
+$gray: #c3c3c3;
+$footer_bg: #595f6f;
+
 @font-face {
   font-family: 'HighTide';
   src: url('/css/fonts/HighTide.ttf');
@@ -10,6 +16,35 @@
 @font-face {
   font-family: 'OdinRounded-Regular';
   src: url('/css/fonts/Odin Rounded - Regular.ttf');
+}
+@font-face {
+  font-family: 'DymaxionScript';
+  font-style: normal;
+  font-weight: normal;
+  src: local('DymaxionScript'), url('DYMAXION.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'OpenSans-SemiBold';
+  src: url('/css/fonts/OpenSans-SemiBold.ttf');
+}
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url('/css/fonts/OpenSans-Regular.ttf');
+}
+@font-face {
+  font-family: 'OpenSans-CondBold';
+  src: url('/css/fonts/OpenSans-CondBold.ttf');
+}
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url('/css/fonts/OpenSans-Light.ttf');
+}
+@font-face {
+  font-family: 'OpenSans-LightItalic';
+  src: url('/css/fonts/OpenSans-LightItalic.ttf');
+}
+* {
+  box-sizing: border-box;
 }
 body {
   margin: 0;
@@ -33,17 +68,22 @@ body {
         family: 'OdinRounded-Regular';
         size: 41.7px;
       }
-      margin: 31.5px 0 0 42.5px;
+      margin: 16.5px 0 0 42.5px;
       line-height: 31.3px;
+      .dot {
+        font: {
+          size: 83.5px;
+        }
+      }
     }
     .search {
       margin-left: auto;
-      margin-right: 42px;
+      margin-right: 40px;
       margin-top: 30.5px;
       width: 30.5px;
       height: 31.5px;
       background: {
-        image: url('../images/search.png');
+        image: url('/images/search.png');
         repeat: no-repeat;
       }
     }
@@ -61,8 +101,8 @@ body {
       &-header {
         position: relative;
         z-index: 1;
-        margin-top: 324.5px;
-        margin-left: -30px;
+        margin-top: 326.5px;
+        margin-left: -32px;
         margin-bottom: 0;
         text-transform: uppercase;
         line-height: 0.45;
@@ -76,13 +116,32 @@ body {
       &-secondary {
         position: relative;
         z-index: 1;
-        margin-top: 23px;
-        margin-left: -30px;
+        margin-top: 29px;
+        margin-left: -31px;
         font: {
           family: 'OpenSans-CondencedLight';
           size: 50px;
-          stretch: condenced; 
           weight: 300;
+        }
+      }
+      .btn {
+        position: relative;
+        padding: 0;
+        color: white;
+        width: 226px;
+        height: 69.5px;
+        background: {
+          color: $btn_bg;
+        }
+        border: none;
+        border-radius: 10px;
+        font: {
+          family: 'OpenSans-CondencedLight';
+          size: 25px;
+        }
+        margin: {
+          left: -32px;
+          top: 8px;
         }
       }
       color: white;
@@ -91,9 +150,10 @@ body {
       height: 100%;
       width: 50%;
       background: {
-        image:  url('../images/calque-5.jpg');
+        image:  url('/images/calque-5.jpg');
         size: cover;
         repeat: no-repeat;
+        position: center bottom;
       }
     }
     .hippie {
@@ -107,27 +167,45 @@ body {
         position: relative;
         z-index: 1;
         margin-top: 324.5px;
-        margin-left: -30px;
+        margin-left: -8px;
         margin-bottom: 0;
-        text-transform: uppercase;
+        text-transform: capitalize;
         line-height: 0.45;
         font: {
-          family: 'HighTide';
+          family: 'DymaxionScript';
           size: 74.7px;
-          stretch: normal; 
-          weight: 300;
+          weight: normal;
         }
       }
       &-secondary {
         position: relative;
         z-index: 1;
-        margin-top: 23px;
-        margin-left: -30px;
+        margin-top: 19px;
+        margin-left: -8px;
         font: {
           family: 'OpenSans-CondencedLight';
           size: 50px;
-          stretch: condenced; 
           weight: 300;
+        }
+      }
+      .btn {
+        position: relative;
+        padding: 0;
+        color: white;
+        width: 226px;
+        height: 69.5px;
+        background: {
+          color: $btn_bg;
+        }
+        border: none;
+        border-radius: 10px;
+        font: {
+          family: 'OpenSans-CondencedLight';
+          size: 25px;
+        }
+        margin: {
+          left: 19px;
+          top: 20px;
         }
       }
       color: white;
@@ -136,9 +214,154 @@ body {
       height: 100%;
       width: 50%;
       background: {
-        image:  url('../images/calque-5.jpg');
+        image:  url('/images/calque-4.jpg');
         size: cover;
         repeat: no-repeat;
+        position: center bottom;
+      }
+    }
+  }
+  .footer {
+    height: 283.5px;
+    padding: 32.5px 41px 33.5px;
+    background-color: $footer_bg;
+    display: flex;
+    border-bottom: 1px solid white;
+    .copyright {
+      flex: 1;
+      border-right: 1px solid $footer_border;
+      .text-block {
+        max-width: 425px;
+        &-header {
+          color: white;
+          margin: {
+            top: -32.5px;
+            bottom: 0;
+          }
+          font: {
+            family: 'OdinRounded-Regular';
+            weight: normal;
+            size: 28.7px;          
+          }
+          .dot {
+            font-size: 57.4px;
+          }
+        }
+        .payment {
+          text-transform: uppercase;
+          color: $gray;
+          margin-top: 15px;
+          font: {
+            family: 'OpenSans-SemiBold';
+            size: 17.5px;
+          }
+          line-height: 25px;
+        }
+        .free-shipping {
+          font: {
+            family: 'OpenSans-Regular';
+            size: 17.5px;
+          }
+          display: inline-block;
+          color: $gray;
+          margin-top: 10px;
+          border-bottom: 1px solid $gray;
+          padding-bottom: 3px;
+          text-decoration: none;
+        }
+        .sign {
+          color: white;
+          text-transform: uppercase;
+          font: {
+            family: 'OpenSans-CondBold';
+            size: 17.5px;
+          }
+          margin-top: 51px;
+        }
+      }
+    }
+    .wrap {
+      flex: 1;
+      display: flex;
+      .nav {
+        flex-basis: 406px;
+        flex-shrink: 1;
+        border-right: 1px solid $footer_border;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font: {
+          family: 'OpenSans-Light';
+          size: 17.5px;
+        }
+        text-transform: uppercase;
+        color: $gray;
+      }
+      .newsletter {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-header {
+          text-transform: uppercase;
+          text-align: center;
+          color: white;
+          margin: {
+            left: 33px;
+            top: 23px;
+            bottom: 0px;
+          }
+          font: {
+            family: 'OpenSans-CondencedLight';
+            size: 17.5px;
+            weight: normal;
+          }
+        }
+        .email {
+          width: 226px;
+          height: 53.5px;
+          text-align: center;
+          border-radius: 10px;
+          margin: {
+            left: 33px;
+            top: 11px;
+          }
+          &::placeholder {
+            font: {
+              family: 'OpenSans-LightItalic';
+              size: 14.9px;
+            }
+            color: rgba(255, 255, 255, 0.5);            
+          }
+          background: rgba(129, 129, 129, 0.1);
+          border: none;
+        }
+        .social {
+          display: flex;
+          width: 140px;
+          justify-content: space-between;
+          margin: {
+            left: 35px;
+            top: 40px;
+          }
+          .twitter,
+          .google,
+          .facebook {
+            background: {
+              image: url('/images/social.png');
+            }
+            display: inline-block;
+            width: 30px;
+            height: 26px;
+          }
+          .google {
+            background-position-x: -65px;
+            margin-left: 19px;
+          }
+          .facebook {
+            background-position-x: -110px;
+          }
+        }
       }
     }
   }

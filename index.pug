@@ -8,38 +8,42 @@ html(lang="fr")
   body
     .container
       header.header
-        span.logo Bikees.
+        span.logo Bikees
+          span.dot .
         span.search
       main.content
         section.hisper
           .bg-image
           h1.hisper-header fixies
           h4.hisper-secondary Hisper style
-          button(type="button") Choisir son modèle
+          button.btn(type="button") Choisir son modèle
         section.hippie
           .bg-image
           h1.hippie-header Cruisers
           h4.hippie-secondary Hippie style
-          button(type="button") Choisir son modèle
+          button.btn(type="button") Choisir son modèle
       footer.footer
-        section.copyright
-          h5.copyright-header
-          p.payment paiment 146% securisé - données criptées et chifrées.
-          p.free-shipping livraison gratuite à partir de 50&euro; d'achat
-          p.copyright-sign &copy;bikees.2015
-        .nav
-          .block1
-            p fixies
-            p cruisers
-            p accessoires
-          .block2
-            p mentions
-            p c.g.u
-            p contact
-        section.newsletter
-          h5.newsletter-header
-          input.email(type="email" placeholder="Saisissez votre adresse mail")
-          .social
-            span.twitter
-            span.google
-            span.facebook
+        .copyright
+          section.text-block
+            h5.text-block-header Bikees
+              span.dot .
+            p.payment paiement 100% securisé - données criptées et chifrées.
+            a(href="#" target="_blank").free-shipping Livraison gratuite à partir de 50&euro; d'achat
+            p.sign &copy;bikees.2015
+        .wrap
+          .nav
+            .block1
+              p fixies
+              p cruisers
+              p accessoires
+            .block2
+              p mentions
+              p c.g.u
+              p contact
+          section.newsletter
+            h5.newsletter-header Inscription Newsletter
+            input.email(type="email" placeholder="Saisissez votre adresse mail")
+            .social
+              a(href="#" target="_blank").twitter
+              a(href="#" target="_blank").google
+              a(href="#" target="_blank").facebook
