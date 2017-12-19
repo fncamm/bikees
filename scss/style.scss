@@ -7,41 +7,41 @@ $footer_bg: #595f6f;
 
 @font-face {
   font-family: 'HighTide';
-  src: url('/css/fonts/HighTide.ttf');
+  src: url('fonts/HighTide.ttf');
 }
 @font-face {
   font-family: 'OpenSans-CondencedLight';
-  src: url('/css/fonts/OpenSans-CondLight.ttf');
+  src: url('fonts/OpenSans-CondLight.ttf');
 }
 @font-face {
   font-family: 'OdinRounded-Regular';
-  src: url('/css/fonts/Odin Rounded - Regular.ttf');
+  src: url('fonts/Odin Rounded - Regular.ttf');
 }
 @font-face {
   font-family: 'DymaxionScript';
   font-style: normal;
   font-weight: normal;
-  src: local('DymaxionScript'), url('DYMAXION.ttf') format('ttf');
+  src: local('DymaxionScript'), url('fonts/DYMAXION.ttf') format('ttf');
 }
 @font-face {
   font-family: 'OpenSans-SemiBold';
-  src: url('/css/fonts/OpenSans-SemiBold.ttf');
+  src: url('fonts/OpenSans-SemiBold.ttf');
 }
 @font-face {
   font-family: 'OpenSans-Regular';
-  src: url('/css/fonts/OpenSans-Regular.ttf');
+  src: url('fonts/OpenSans-Regular.ttf');
 }
 @font-face {
   font-family: 'OpenSans-CondBold';
-  src: url('/css/fonts/OpenSans-CondBold.ttf');
+  src: url('fonts/OpenSans-CondBold.ttf');
 }
 @font-face {
   font-family: 'OpenSans-Light';
-  src: url('/css/fonts/OpenSans-Light.ttf');
+  src: url('fonts/OpenSans-Light.ttf');
 }
 @font-face {
   font-family: 'OpenSans-LightItalic';
-  src: url('/css/fonts/OpenSans-LightItalic.ttf');
+  src: url('fonts/OpenSans-LightItalic.ttf');
 }
 * {
   box-sizing: border-box;
@@ -83,7 +83,7 @@ body {
       width: 30.5px;
       height: 31.5px;
       background: {
-        image: url('/images/search.png');
+        image: url('../images/search.png');
         repeat: no-repeat;
       }
     }
@@ -150,7 +150,7 @@ body {
       height: 100%;
       width: 50%;
       background: {
-        image:  url('/images/calque-5.jpg');
+        image:  url('../images/calque-5.jpg');
         size: cover;
         repeat: no-repeat;
         position: center bottom;
@@ -214,7 +214,7 @@ body {
       height: 100%;
       width: 50%;
       background: {
-        image:  url('/images/calque-4.jpg');
+        image:  url('../images/calque-4.jpg');
         size: cover;
         repeat: no-repeat;
         position: center bottom;
@@ -348,7 +348,7 @@ body {
           .google,
           .facebook {
             background: {
-              image: url('/images/social.png');
+              image: url('../images/social.png');
             }
             display: inline-block;
             width: 30px;
