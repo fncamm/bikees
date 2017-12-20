@@ -7,23 +7,35 @@
     <title>Bikees.</title>
   </head>
   <body>
-    <div class="container">
-      <header class="header"><span class="logo">Bikees<span class="dot">.</span></span><span class="search"></span></header>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container"><span class="logo">Bikees<span class="dot">.</span></span><span class="search"></span></div>
+      </header>
       <main class="content">
-        <section class="hisper">
-          <div class="bg-image"></div>
-          <h1 class="hisper-header">fixies</h1>
-          <h4 class="hisper-secondary">Hisper style</h4>
-          <button class="btn" type="button">Choisir son modèle</button>
-        </section>
-        <section class="hippie">
-          <div class="bg-image"></div>
-          <h1 class="hippie-header">Cruisers</h1>
-          <h4 class="hippie-secondary">Hippie style</h4>
-          <button class="btn" type="button">Choisir son modèle</button>
-        </section>
+        <div class="bg-image-container">
+          <div class="bg-hisper">
+            <div class="bg-hisper-gradient"></div>
+          </div>
+          <div class="bg-hippie">
+            <div class="bg-hippie-gradient"></div>
+          </div>
+        </div>
+        <div class="container">
+          <section class="hisper">
+            <h1 class="hisper-header">fixies</h1>
+            <h4 class="hisper-secondary">Hisper style</h4>
+            <button class="btn" type="button">Choisir son modèle</button>
+          </section>
+          <section class="hippie">
+            <h1 class="hippie-header">Cruisers</h1>
+            <h4 class="hippie-secondary">Hippie style</h4>
+            <button class="btn" type="button">Choisir son modèle</button>
+          </section>
+        </div>
       </main>
-      <footer class="footer">
+    </div>
+    <footer class="footer">
+      <div class="container">
         <div class="copyright">
           <section class="text-block">
             <h5 class="text-block-header">Bikees<span class="dot">.</span></h5>
@@ -50,7 +62,7 @@
             <div class="social"><a class="twitter" href="#" target="_blank"></a><a class="google" href="#" target="_blank"></a><a class="facebook" href="#" target="_blank"></a></div>
           </section>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>
