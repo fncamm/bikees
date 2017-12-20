@@ -78,6 +78,26 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
   z-index: 1;
   display: flex;
+  @media (max-width: $breakpoint-mobile) {
+    height: 70px;
+  }
+  .menu-pic {
+    width: 17px;
+    height: 15.5px;
+    display: none;
+    background: {
+      image: url('../images/menu.png');
+      size: contain;
+      repeat: no-repeat;
+    }
+    margin: {
+      left: 15px;
+      top: 26.6px;
+    }
+    @media (max-width: $breakpoint-mobile) {
+      display: inline-block;
+    }
+  }
   .logo {
     opacity: 1;
     color: white;
@@ -91,6 +111,18 @@ body {
       font: {
         size: 83.5px;
       }
+      @media (max-width: $breakpoint-mobile) {
+        font-size: 50.6px;
+        line-height: 8.3px;
+      }
+    }
+    @media (max-width: $breakpoint-mobile) {
+      margin: {
+        top: 21.5px;
+        left: 5.5px;
+      }
+      font-size: 25.3px;
+      line-height: 8.3px;
     }
   }
   .search {
@@ -119,6 +151,11 @@ body {
       width: 226px;
       height: 53.5px;
       opacity: 1;
+      @media (max-width: $breakpoint-mobile) {
+        width: 150px;
+        height: 30px;
+        margin-top: 21px;
+      }
     }
   }
   .search-icon {
@@ -138,11 +175,23 @@ body {
     &:active {
       transform: scale(0.95);
     }
+    @media (max-width: $breakpoint-mobile) {
+      width: 17.5px;
+      height: 17px;
+      background-size: contain;
+      margin: {
+        right: 15px;
+        top: 26px;
+      }
+    }
   }
 }
 .content {
   display: flex;
   height: 900px;
+  @media (max-width: $breakpoint-mobile) {
+    height: auto;
+  }
   .container {
     @media (max-width: $breakpoint-mobile) {
       flex-direction: column;
@@ -163,6 +212,10 @@ body {
       position: relative;
       overflow: hidden;
       flex: 1;
+      @media (max-width: $breakpoint-mobile) {
+        flex: none;
+        height: 334px;
+      }
       &-image {
         position: absolute;
         width: 100%;
@@ -183,6 +236,10 @@ body {
       position: relative;
       overflow: hidden;
       flex: 1;
+      @media (max-width: $breakpoint-mobile) {
+        flex: none;
+        height: 334px;
+      }
       &-image {
         position: absolute;
         width: 100%;
@@ -206,6 +263,10 @@ body {
     position: relative;
     height: 100%;
     flex: 1;
+    @media (max-width: $breakpoint-mobile) {
+      flex: none;
+      height: 334px;
+    }
     &-header {
       position: relative;
       z-index: 1;
@@ -222,8 +283,13 @@ body {
       }
       @media (max-width: $breakpoint-mobile) {
         margin: {
-          top: 128.5px;
+          top: 122.5px;
+          left: -6px;
         }
+        font: {
+          size: 40.2px;
+        }
+        line-height: 29.8px;
       }
     }
     &-secondary {
@@ -235,6 +301,14 @@ body {
         family: 'OpenSans-CondencedLight';
         size: 50px;
         weight: 300;
+      }
+      @media (max-width: $breakpoint-mobile) {
+        font-size: 26.9px;
+        line-height: 29.8px;
+        margin: {
+          top: 11px;
+          left: -6px;
+        }
       }
     }
     .btn {
@@ -258,6 +332,19 @@ body {
       }
       transition: background-color 0.3s ease-in, transform 0.1s ease-in-out;
       outline: none;
+      @media (max-width: $breakpoint-mobile) {
+        width: 179px;
+        height: 55px;
+        border-radius: 5px;
+        font: {
+          size: 19.7px;
+        }
+        line-height: 36.3px;
+        margin: {
+          top: -9px;
+          left: 2px;
+        }
+      }
       &:hover {
         background-color: rgba(0,0,0, 0.35);
       }
@@ -272,6 +359,10 @@ body {
     position: relative;
     height: 100%;
     flex: 1;
+    @media (max-width: $breakpoint-mobile) {
+      flex: none;
+      height: 334px;
+    }
     &-header {
       position: relative;
       z-index: 1;
@@ -285,6 +376,11 @@ body {
         size: 74.7px;
         weight: normal;
       }
+      @media (max-width: $breakpoint-mobile) {
+        font-size: 40.2px;
+        line-height: 29.8px;
+        margin-top: 90.5px;
+      }
     }
     &-secondary {
       position: relative;
@@ -295,6 +391,11 @@ body {
         family: 'OpenSans-CondencedLight';
         size: 50px;
         weight: 300;
+      }
+      @media (max-width: $breakpoint-mobile) {
+        font-size: 26.9px;
+        line-height: 29.8px;
+        margin-top: 4px;
       }
     }
     .btn {
@@ -318,6 +419,18 @@ body {
       }
       transition: background-color 0.3s ease-in, transform 0.1s ease-in-out;
       outline: none;
+      @media (max-width: $breakpoint-mobile) {
+        width: 179px;
+        height: 55px;
+        font: {
+          size: 19.7px;
+        }
+        line-height: 36.3px;
+        margin: {
+          top: -2px;
+          left: 2px;
+        }
+      }
       &:hover {
         background-color: rgba(0,0,0, 0.35);
       }
@@ -332,11 +445,19 @@ body {
   background-color: $footer_bg;
   display: flex;
   border-bottom: 1px solid white;
+  @media (max-width: $breakpoint-mobile) {
+    height: auto;
+    text-align: center;
+  }
   .container {
-    padding: 32.5px 41px 33.5px;
+    padding: 53.5px 41px 33.5px;
     @media (max-width: $breakpoint-mobile) {
       flex-direction: column;
       align-content: center;
+      padding: 31.5px 34px 45px 34px;
+      display: flex;
+      align-items: center;
+      background-color: $footer_bg;
     }
   }
   .copyright {
@@ -345,6 +466,12 @@ body {
     @media (max-width: $breakpoint-mobile) {
       border: none;
       border-bottom: 1px solid $footer_border;
+      margin-top: 22px;
+      flex: none;
+      padding-bottom: 17px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
     }
     .text-block {
       max-width: 425px;
@@ -359,8 +486,16 @@ body {
           weight: normal;
           size: 28.7px;          
         }
+        @media (max-width: $breakpoint-mobile) {
+          font-size: 26.8px;
+          line-height: 20.1px;
+        }
         .dot {
           font-size: 57.4px;
+          @media (max-width: $breakpoint-mobile) {
+            font-size: 53.5px;
+            line-height: 20.1px;
+          }
         }
       }
       .payment {
@@ -372,6 +507,11 @@ body {
           size: 17.5px;
         }
         line-height: 25px;
+        @media (max-width: $breakpoint-mobile) {
+          font-size: 16.3px;
+          line-height: 23.3px;
+          margin-top: 25px;
+        }
       }
       .free-shipping {
         font: {
@@ -385,6 +525,12 @@ body {
         padding-bottom: 3px;
         text-decoration: none;
         transition: 0.3s color ease-in;
+        @media (max-width: $breakpoint-mobile) {
+          font-size: 16.3px;
+          line-height: 23.3px;
+          margin-top: 8px;
+          padding-bottom: 0px;
+        }
         &:hover {
           color: white;
         }
@@ -397,6 +543,11 @@ body {
           size: 17.5px;
         }
         margin-top: 51px;
+        @media (max-width: $breakpoint-mobile) {
+          font-size: 16.3px;
+          line-height: 23.3px;
+          margin-top: 46px;
+        }
       }
     }
   }
@@ -406,6 +557,7 @@ body {
     @media (max-width: $breakpoint-mobile) {
       flex-direction: column;
       align-content: center;
+      width: 100%;
     }
     .nav {
       flex-basis: 406px;
@@ -415,6 +567,17 @@ body {
       justify-content: space-evenly;
       align-items: center;
       text-transform: uppercase;
+      @media (max-width: $breakpoint-mobile) {
+        border: none;
+        border-bottom: 1px solid $footer_border;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: {
+          top: 28px;
+          left: -7px;
+        }
+        flex-basis: 302px;
+      }
       .link {
         font: {
           family: 'OpenSans-Light';
@@ -424,6 +587,14 @@ body {
         text-decoration: none;
         color: $gray;
         transition: color 0.3s ease-in;
+        @media (max-width: $breakpoint-mobile) {
+          font-size: 18.3px;
+          line-height: 44.2px;
+          margin: {
+            top: 0;
+            bottom: 0;
+          }
+        }
         &:hover {
           color: white;
         }
@@ -438,6 +609,9 @@ body {
       display: flex;
       flex-direction: column;
       align-items: center;
+      @media (max-width: $breakpoint-mobile) {
+        flex-basis: 245.5px;
+      }
       &-header {
         text-transform: uppercase;
         text-align: center;
@@ -452,6 +626,12 @@ body {
           size: 17.5px;
           weight: normal;
         }
+        @media (max-width: $breakpoint-mobile) {
+          margin: {
+            top: 40px;
+            left: -12px;
+          }
+        }
       }
       .email {
         width: 226px;
@@ -462,6 +642,14 @@ body {
         margin: {
           left: 33px;
           top: 11px;
+        }
+        @media (max-width: $breakpoint-mobile) {
+          width: 269px;
+          border-radius: 5px;
+          margin: {
+            left: -14px;
+            top: 17px;
+          }
         }
         &::placeholder {
           font: {
@@ -480,6 +668,12 @@ body {
         margin: {
           left: 35px;
           top: 40px;
+        }
+        @media (max-width: $breakpoint-mobile) {
+          margin: {
+            left: -3px;
+            top: 44px;
+          }
         }
         .twitter,
         .google,
