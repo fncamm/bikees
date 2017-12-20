@@ -4,6 +4,8 @@ html(lang="fr")
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     link(rel="stylesheet" href="css/style.css")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+    script(src="/scripts/main.js")
     title Bikees.
   body
     .wrapper
@@ -11,12 +13,15 @@ html(lang="fr")
         .container
           span.logo Bikees
             span.dot .
-          span.search
+          input(type="search").search
+          span.search-icon
       main.content
         .bg-image-container
           .bg-hisper
+            img(src="/images/calque-5.jpg").bg-hisper-image
             .bg-hisper-gradient
           .bg-hippie
+            img(src="/images/calque-4.jpg").bg-hippie-image
             .bg-hippie-gradient
         .container
           section.hisper
@@ -39,13 +44,13 @@ html(lang="fr")
         .wrap
           .nav
             .block1
-              p fixies
-              p cruisers
-              p accessoires
+              a.link(href="#") fixies
+              a.link(href="#") cruisers
+              a.link(href="#") accessoires
             .block2
-              p mentions
-              p c.g.u
-              p contact
+              a.link(href="#") mentions
+              a.link(href="#") c.g.u
+              a.link(href="#") contact
           section.newsletter
             h5.newsletter-header Inscription Newsletter
             input.email(type="email" placeholder="Saisissez votre adresse mail")

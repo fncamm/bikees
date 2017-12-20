@@ -4,19 +4,23 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="css/style.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/scripts/main.js"></script>
     <title>Bikees.</title>
   </head>
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="container"><span class="logo">Bikees<span class="dot">.</span></span><span class="search"></span></div>
+        <div class="container"><span class="logo">Bikees<span class="dot">.</span></span>
+          <input class="search" type="search"/><span class="search-icon"></span>
+        </div>
       </header>
       <main class="content">
         <div class="bg-image-container">
-          <div class="bg-hisper">
+          <div class="bg-hisper"><img class="bg-hisper-image" src="/images/calque-5.jpg"/>
             <div class="bg-hisper-gradient"></div>
           </div>
-          <div class="bg-hippie">
+          <div class="bg-hippie"><img class="bg-hippie-image" src="/images/calque-4.jpg"/>
             <div class="bg-hippie-gradient"></div>
           </div>
         </div>
@@ -45,16 +49,8 @@
         </div>
         <div class="wrap">
           <div class="nav">
-            <div class="block1">
-              <p>fixies</p>
-              <p>cruisers</p>
-              <p>accessoires</p>
-            </div>
-            <div class="block2">
-              <p>mentions</p>
-              <p>c.g.u</p>
-              <p>contact</p>
-            </div>
+            <div class="block1"><a class="link" href="#">fixies</a><a class="link" href="#">cruisers</a><a class="link" href="#">accessoires</a></div>
+            <div class="block2"><a class="link" href="#">mentions</a><a class="link" href="#">c.g.u</a><a class="link" href="#">contact</a></div>
           </div>
           <section class="newsletter">
             <h5 class="newsletter-header">Inscription Newsletter</h5>
