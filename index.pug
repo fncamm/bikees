@@ -6,23 +6,29 @@ html(lang="fr")
     link(rel="stylesheet" href="css/style.css")
     title Bikees.
   body
-    .container
+    .wrapper
       header.header
-        span.logo Bikees
-          span.dot .
-        span.search
+        .container
+          span.logo Bikees
+            span.dot .
+          span.search
       main.content
-        section.hisper
-          .bg-image
-          h1.hisper-header fixies
-          h4.hisper-secondary Hisper style
-          button.btn(type="button") Choisir son modèle
-        section.hippie
-          .bg-image
-          h1.hippie-header Cruisers
-          h4.hippie-secondary Hippie style
-          button.btn(type="button") Choisir son modèle
-      footer.footer
+        .bg-image-container
+          .bg-hisper
+            .bg-hisper-gradient
+          .bg-hippie
+            .bg-hippie-gradient
+        .container
+          section.hisper
+            h1.hisper-header fixies
+            h4.hisper-secondary Hisper style
+            button.btn(type="button") Choisir son modèle
+          section.hippie
+            h1.hippie-header Cruisers
+            h4.hippie-secondary Hippie style
+            button.btn(type="button") Choisir son modèle
+    footer.footer
+      .container
         .copyright
           section.text-block
             h5.text-block-header Bikees
