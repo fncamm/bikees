@@ -173,7 +173,7 @@ body {
       transform: scale(1);
     }
     &:active {
-      transform: scale(0.95);
+      transform: translateY(1px);
     }
     @media (max-width: $breakpoint-mobile) {
       width: 17.5px;
@@ -346,10 +346,11 @@ body {
         }
       }
       &:hover {
-        background-color: rgba(0,0,0, 0.35);
+        background-color: rgba(0,0,0, 0.1);
       }
       &:active {
-        transform: scale(0.98);
+        background-color: rgba(0,0,0, 0.3);
+        transform: translateY(1px);
       }
     }
   }
@@ -432,10 +433,11 @@ body {
         }
       }
       &:hover {
-        background-color: rgba(0,0,0, 0.35);
+        background-color: rgba(0,0,0, 0.1);
       }
       &:active {
-        transform: scale(0.98);
+        background-color: rgba(0,0,0, 0.3);
+        transform: translateY(1px);
       }
     }
   }
