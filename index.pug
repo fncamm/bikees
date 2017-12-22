@@ -12,17 +12,17 @@ html(lang="fr")
       header.header
         .container
           span.menu-pic
-          span.logo Bikees
+          a(href="/").logo Bikees
             span.dot .
           input(type="search").search
           span.search-icon
       main.content
         .bg-image-container
           .bg-hisper
-            img(src="images/calque-5.jpg").bg-hisper-image
+            img(src="images/calque-5.jpg" alt="bike for hispers").bg-hisper-image
             .bg-hisper-gradient
           .bg-hippie
-            img(src="images/calque-4.jpg").bg-hippie-image
+            img(src="images/calque-4.jpg" alt="bike for hippies").bg-hippie-image
             .bg-hippie-gradient
         .container
           section.hisper
@@ -37,7 +37,7 @@ html(lang="fr")
       .container
         .copyright
           section.text-block
-            h5.text-block-header Bikees
+            a(href="/").text-block-header Bikees
               span.dot .
             p.payment paiement 100% securisé - données criptées et chifrées.
             a(href="#" target="_blank").free-shipping Livraison gratuite à partir de 50&euro; d'achat
@@ -56,6 +56,6 @@ html(lang="fr")
             h5.newsletter-header Inscription Newsletter
             input.email(type="email" placeholder="Saisissez votre adresse mail")
             .social
-              a(href="#" target="_blank").twitter
-              a(href="#" target="_blank").google
-              a(href="#" target="_blank").facebook
+              a(href="https://twitter.com" target="_blank").twitter
+              a(href="https://plus.google.com" target="_blank").google
+              a(href="https://facebook.com" target="_blank").facebook
