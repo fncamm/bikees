@@ -171,6 +171,7 @@ body {
     width: 30.5px;
     height: 31.5px;
     transform: scale(0.95);
+    cursor: pointer;
     background: {
       image: url('../images/search.png');
       repeat: no-repeat;
@@ -699,6 +700,7 @@ body {
           background: {
             image: url('../images/social.png');
           }
+          cursor: pointer;
           display: inline-block;
           width: 30px;
           height: 26px;
