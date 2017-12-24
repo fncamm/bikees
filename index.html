@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Bikes for gays!"/>
     <link rel="stylesheet" href="css/style.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="scripts/main.js"></script>
@@ -11,8 +12,9 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="container"><span class="menu-pic"></span><a class="logo" href="/">Bikees<span class="dot">.</span></a>
-          <input class="search" type="search"/><span class="search-icon"></span>
+        <div class="container"><span class="menu-pic"></span>
+          <h1 class="logo"><a class="logo-link" href="#" title="Link to the root of this site">Bikees</a><span class="dot">.</span></h1>
+          <input class="search" type="text" title="Search field"/><span class="search-icon"></span>
         </div>
       </header>
       <main class="content">
@@ -26,13 +28,13 @@
         </div>
         <div class="container">
           <section class="hisper">
-            <h1 class="hisper-header">fixies</h1>
-            <h4 class="hisper-secondary">Hisper style</h4>
+            <h2 class="hisper-header">fixies</h2>
+            <h2 class="hisper-secondary">Hisper style</h2>
             <button class="btn" type="button">Choisir son modèle</button>
           </section>
           <section class="hippie">
-            <h1 class="hippie-header">Cruisers</h1>
-            <h4 class="hippie-secondary">Hippie style</h4>
+            <h2 class="hippie-header">Cruisers</h2>
+            <h2 class="hippie-secondary">Hippie style</h2>
             <button class="btn" type="button">Choisir son modèle</button>
           </section>
         </div>
@@ -41,20 +43,20 @@
     <footer class="footer">
       <div class="container">
         <div class="copyright">
-          <section class="text-block"><a class="text-block-header" href="/">Bikees<span class="dot">.</span></a>
+          <div class="text-block"><a class="text-block-header" href="#" title="Link to the root of this site">Bikees<span class="dot">.</span></a>
             <p class="payment">paiement 100% securisé - données criptées et chifrées.</p><a class="free-shipping" href="#" target="_blank">Livraison gratuite à partir de 50&euro; d'achat</a>
             <p class="sign">&copy;bikees.2015</p>
-          </section>
+          </div>
         </div>
         <div class="wrap">
           <div class="nav">
-            <div class="block1"><a class="link" href="#">fixies</a><a class="link" href="#">cruisers</a><a class="link" href="#">accessoires</a></div>
-            <div class="block2"><a class="link" href="#">mentions</a><a class="link" href="#">c.g.u</a><a class="link" href="#">contact</a></div>
+            <div class="block1"><a class="link" href="#" title="Fixies category">fixies</a><a class="link" href="#" title="Cruisers category">cruisers</a><a class="link" href="#" title="Accessoires category">accessoires</a></div>
+            <div class="block2"><a class="link" href="#" title="Mentions about us">mentions</a><a class="link" href="#" title="C.G.U">c.g.u</a><a class="link" href="#" title="Contact us!">contact</a></div>
           </div>
           <section class="newsletter">
             <h5 class="newsletter-header">Inscription Newsletter</h5>
-            <input class="email" type="email" placeholder="Saisissez votre adresse mail"/>
-            <div class="social"><a class="twitter" href="https://twitter.com" target="_blank"></a><a class="google" href="https://plus.google.com" target="_blank"></a><a class="facebook" href="https://facebook.com" target="_blank"></a></div>
+            <input class="email" type="text" title="Email field" placeholder="Saisissez votre adresse mail" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$"/>
+            <div class="social"><a class="twitter" href="https://twitter.com" target="_blank">Twitter</a><a class="google" href="https://plus.google.com" target="_blank">Google+</a><a class="facebook" href="https://facebook.com" target="_blank">Facebook</a></div>
           </section>
         </div>
       </div>
