@@ -668,6 +668,9 @@ body {
             top: 17px;
           }
         }
+        &:invalid {
+          box-shadow: 0 0 15px 2px rgba(255, 17, 0, 0.747) inset;
+        }
         &::placeholder {
           text-align: center;
           padding-left: none;
@@ -704,6 +707,10 @@ body {
           display: inline-block;
           width: 30px;
           height: 26px;
+          transition: all 0.1s ease-in;
+          &:hover {
+            filter: brightness(200%);
+          }
         }
         .google {
           background-position-x: -65px;

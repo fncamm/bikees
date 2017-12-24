@@ -8,7 +8,10 @@ $(document).ready(()=>{
     searchInput.val('');
   });
   $('.search-icon').click((e)=>{
-    searchInput.addClass('active');
+    searchInput.toggleClass('active');
+    if (searchInput.hasClass('active')) {
+      searchInput.focus();
+    }
     e.stopPropagation();
   });
 
