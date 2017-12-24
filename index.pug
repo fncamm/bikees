@@ -3,6 +3,7 @@ html(lang="fr")
   head
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(name="description" content="Bikes for gays!")
     link(rel="stylesheet" href="css/style.css")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
     script(src="scripts/main.js")
@@ -12,9 +13,10 @@ html(lang="fr")
       header.header
         .container
           span.menu-pic
-          a(href="/").logo Bikees
+          h1.logo
+            a.logo-link(href="#" title="Link to the root of this site") Bikees
             span.dot .
-          input(type="search").search
+          input(type="text" title="Search field").search
           span.search-icon
       main.content
         .bg-image-container
@@ -26,18 +28,18 @@ html(lang="fr")
             .bg-hippie-gradient
         .container
           section.hisper
-            h1.hisper-header fixies
-            h4.hisper-secondary Hisper style
+            h2.hisper-header fixies
+            h2.hisper-secondary Hisper style
             button.btn(type="button") Choisir son modèle
           section.hippie
-            h1.hippie-header Cruisers
-            h4.hippie-secondary Hippie style
+            h2.hippie-header Cruisers
+            h2.hippie-secondary Hippie style
             button.btn(type="button") Choisir son modèle
     footer.footer
       .container
         .copyright
-          section.text-block
-            a(href="/").text-block-header Bikees
+          .text-block
+            a(href="#" title="Link to the root of this site").text-block-header Bikees
               span.dot .
             p.payment paiement 100% securisé - données criptées et chifrées.
             a(href="#" target="_blank").free-shipping Livraison gratuite à partir de 50&euro; d'achat
@@ -45,17 +47,17 @@ html(lang="fr")
         .wrap
           .nav
             .block1
-              a.link(href="#") fixies
-              a.link(href="#") cruisers
-              a.link(href="#") accessoires
+              a.link(href="#" title="Fixies category") fixies
+              a.link(href="#" title="Cruisers category") cruisers
+              a.link(href="#" title="Accessoires category") accessoires
             .block2
-              a.link(href="#") mentions
-              a.link(href="#") c.g.u
-              a.link(href="#") contact
+              a.link(href="#" title="Mentions about us") mentions
+              a.link(href="#" title="C.G.U") c.g.u
+              a.link(href="#" title="Contact us!") contact
           section.newsletter
             h5.newsletter-header Inscription Newsletter
-            input.email(type="email" placeholder="Saisissez votre adresse mail")
+            input.email(type="text" title="Email field" placeholder="Saisissez votre adresse mail" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$")
             .social
-              a(href="https://twitter.com" target="_blank").twitter
-              a(href="https://plus.google.com" target="_blank").google
-              a(href="https://facebook.com" target="_blank").facebook
+              a(href="https://twitter.com" target="_blank").twitter Twitter
+              a(href="https://plus.google.com" target="_blank").google Google+
+              a(href="https://facebook.com" target="_blank").facebook Facebook

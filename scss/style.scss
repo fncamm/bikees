@@ -100,7 +100,6 @@ body {
   }
   .logo {
     opacity: 1;
-    text-decoration: none;
     color: white;
     font: {
       family: 'OdinRounded-Regular';
@@ -108,6 +107,10 @@ body {
     }
     margin: 16.5px 0 0 42.5px;
     line-height: 31.3px;
+    &-link {
+      text-decoration: none;
+      color:white;
+    }
     .dot {
       font: {
         size: 83.5px;
@@ -700,6 +703,7 @@ body {
         .twitter,
         .google,
         .facebook {
+          color: transparent;
           background: {
             image: url('../images/social.png');
           }
@@ -713,11 +717,15 @@ body {
           }
         }
         .google {
-          background-position-x: -65px;
+          background: {
+            position-x: -65px;
+          }
           margin-left: 19px;
         }
         .facebook {
-          background-position-x: -110px;
+          background: {
+            position-x: -110px;
+          }
         }
       }
     }
